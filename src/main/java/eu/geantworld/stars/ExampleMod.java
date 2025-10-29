@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package eu.geantworld.stars;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
