@@ -19,7 +19,7 @@ import org.slf4j.Logger;
 public class StarsMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "starsmod";
+    public static final String MOD_ID = "geantworldstarsmod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
