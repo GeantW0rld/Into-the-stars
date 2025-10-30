@@ -1,6 +1,7 @@
 package eu.geantworld.intothestars;
 
 import com.mojang.logging.LogUtils;
+import eu.geantworld.intothestars.block.ModBlocks;
 import eu.geantworld.intothestars.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,7 @@ public class StarsMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -55,6 +57,10 @@ public class StarsMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ALEXANDRITE);
             event.accept(ModItems.RAW_ALEXANDRITE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
         }
     }
 
