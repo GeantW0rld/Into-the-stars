@@ -22,7 +22,7 @@ public class ModTabs {
                     ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "tab"),
                     () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                             .icon(() -> new ItemStack(ModItems.TestBlock.get()))
-                            .title(Component.literal(Constants.MOD_NAME))
+                            .title(Component.translatable(Constants.MOD_NAME))
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.TestBlock.get());
                             })

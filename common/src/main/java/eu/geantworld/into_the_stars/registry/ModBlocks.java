@@ -4,8 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
 import eu.geantworld.into_the_stars.Constants;
-import eu.geantworld.into_the_stars.block.MyCoolBlock;
-import java.util.function.BiConsumer;
+import eu.geantworld.into_the_stars.block.TestBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -17,7 +16,7 @@ public class ModBlocks {
 
     public static final Registrar<Block> BLOCK_REGISTRAR = BLOCKS.getRegistrar();
 
-    public static final RegistrySupplier<Block> TestBlock = BLOCK_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "test_block"), () -> new MyCoolBlock(BlockBehaviour.Properties.of()));
+    public static final RegistrySupplier<Block> TestBlock = BLOCK_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "test_block"), () -> new TestBlock(BlockBehaviour.Properties.of()));
 
     public static void register() {
 
