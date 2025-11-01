@@ -1,16 +1,13 @@
 {
   "required": true,
+  "package": "eu.geantworld.mixin",
+  "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8",
-  "package": "eu.geantworld.into_the_stars.mixin",
-  "refmap": "${mod_id}.refmap.json",
-  "compatibilityLevel": "JAVA_18",
-  "mixins": [],
   "client": [
-    "MixinMinecraft"
   ],
-  "server": [],
+  "mixins": [
+  ],
   "injectors": {
     "defaultRequire": 1
   }
 }
-

@@ -1,23 +1,23 @@
 package eu.geantworld.into_the_stars.registry;
 
+
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.Registrar;
+import dev.architectury.registry.registries.RegistrySupplier;
 import eu.geantworld.into_the_stars.Constants;
-import java.util.function.BiConsumer;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class ModItems {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Constants.MOD_ID, Registries.ITEM);
 
-  public static final Item MY_COOL_BLOCK = new BlockItem(ModBlocks.MY_COOL_BLOCK,
-      new Item.Properties());
+    public static final Registrar<Item> ITEM_REGISTRAR = ITEMS.getRegistrar();
 
-  static {
-    Constants.LOG.info("defined items!");
-  }
+    public static final RegistrySupplier<Item> TestBlock = ITEM_REGISTRAR.register(ModBlocks.TestBlock.getId(), () -> new BlockItem(ModBlocks.TestBlock.get(), new Item.Properties()));
 
-  public static void register(BiConsumer<Item, ResourceLocation> consumer) {
-    Constants.LOG.info("registering items!");
-    consumer.accept(MY_COOL_BLOCK, BuiltInRegistries.BLOCK.getKey(ModBlocks.MY_COOL_BLOCK));
-  }
+    public static void register() {
+
+    }
 }
