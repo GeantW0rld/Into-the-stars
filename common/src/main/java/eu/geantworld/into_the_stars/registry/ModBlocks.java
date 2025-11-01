@@ -9,6 +9,7 @@ import eu.geantworld.into_the_stars.block.TestBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ModBlocks {
@@ -16,7 +17,9 @@ public class ModBlocks {
 
     public static final Registrar<Block> BLOCK_REGISTRAR = BLOCKS.getRegistrar();
 
-    public static final RegistrySupplier<Block> TestBlock = BLOCK_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "test_block"), () -> new TestBlock(BlockBehaviour.Properties.of()));
+    public static final RegistrySupplier<Block> TestBlock = BLOCK_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(
+            Constants.MOD_ID, "test_block"),
+            () -> new TestBlock(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.AMETHYST)));
 
     public static void register() {
 
