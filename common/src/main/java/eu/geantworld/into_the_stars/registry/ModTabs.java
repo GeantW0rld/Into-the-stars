@@ -25,6 +25,7 @@ public class ModTabs {
                             .title(Component.translatable("itemgroup.into_the_stars.title"))
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.TestBlock.get());
+                                output.accept(ModItems.TestItem.get());
                             })
                             .build()
             );
