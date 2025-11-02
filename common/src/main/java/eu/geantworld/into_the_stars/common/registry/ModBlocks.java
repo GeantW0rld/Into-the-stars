@@ -1,10 +1,10 @@
-package eu.geantworld.into_the_stars.registry;
+package eu.geantworld.into_the_stars.common.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
 import eu.geantworld.into_the_stars.Constants;
-import eu.geantworld.into_the_stars.block.TestBlock;
+import eu.geantworld.into_the_stars.common.blocks.TestBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

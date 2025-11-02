@@ -1,4 +1,4 @@
-package eu.geantworld.into_the_stars.block;
+package eu.geantworld.into_the_stars.common.blocks;
 
 import net.minecraft.world.level.block.Block;
 

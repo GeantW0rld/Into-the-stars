@@ -1,4 +1,4 @@
-package eu.geantworld.into_the_stars.registry;
+package eu.geantworld.into_the_stars.common.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
