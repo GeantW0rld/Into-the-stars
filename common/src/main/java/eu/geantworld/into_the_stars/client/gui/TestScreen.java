@@ -1,7 +1,6 @@
 package eu.geantworld.into_the_stars.client.gui;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
 import eu.geantworld.into_the_stars.common.menus.TestMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
