@@ -15,7 +15,7 @@ public class TestScreen extends AbstractContainerScreen<TestMenu> {
     public TestScreen(TestMenu menu, Inventory inv, Component title) {
         super(menu, inv, title);
         this.imageWidth = 176;
-        this.imageHeight = 166;
+        this.imageHeight = 133;
     }
 
     @Override
