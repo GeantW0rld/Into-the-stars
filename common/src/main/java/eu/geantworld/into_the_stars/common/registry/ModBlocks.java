@@ -23,7 +23,7 @@ public class ModBlocks {
             () -> new TestBlock(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.STONE)));
 
     public static final RegistrySupplier<Block> MoonSandBlock = BLOCK_REGISTRAR.register(
-            ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "moon_stand_block"),
+            ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "moon_sand_block"),
             () -> new MoonSandBlock(BlockBehaviour.Properties.of().strength(1f).sound(SoundType.SAND))
     );
 

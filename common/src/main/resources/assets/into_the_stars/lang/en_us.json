@@ -1,5 +1,6 @@
 {
   "block.into_the_stars.test_block": "Test Block",
   "itemgroup.into_the_stars.title": "Into The Stars",
-  "item.into_the_stars.test_item": "Test Item"
+  "item.into_the_stars.test_item": "Test Item",
+  "block.into_the_stars.moon_sand_block": "Moon Sand"
 }
