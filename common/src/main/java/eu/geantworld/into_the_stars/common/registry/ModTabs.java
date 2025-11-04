@@ -26,6 +26,7 @@ public class ModTabs {
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.TestBlock.get());
                                 output.accept(ModItems.TestItem.get());
+                                output.accept(ModItems.MoonSandBlock.get());
                             })
                             .build()
             );
