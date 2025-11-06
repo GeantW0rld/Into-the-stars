@@ -1,7 +1,7 @@
 # Into The Stars
 Go to the space...
 <br>
-Inspired by Ad Astra mod, I just wanted to write mine
+Inspired by Ad Astra mod.
 ## We are working on the readme and the project
 any contribution are welcome ^^
 
