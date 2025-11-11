@@ -20,7 +20,7 @@ public class ModItems {
 
     public static final RegistrySupplier<Item> MoonSandBlock = ITEM_REGISTRAR.register(ModBlocks.MoonSandBlock.getId(), () -> new BlockItem(ModBlocks.MoonSandBlock.get(), new Item.Properties()));
 
-    public static final RegistrySupplier<Item> TestItem = ITEM_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "test_item"), () -> new TestItem(new Item.Properties()));
+    public static final RegistrySupplier<Item> TestItem = ITEM_REGISTRAR.register(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "test_item"), () -> new TestItem(new Item.Properties().stacksTo(1)));
 
     public static void register() {
 
